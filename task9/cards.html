@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cards</title>
+    <style>
+        body{
+            background: rgb(238, 238, 238);
+            margin: 20px 200px 20px 200px;
+        }
+        img{
+            max-width: 100%;
+        }
+        p{
+            padding: 0 15px;
+        }
+        .card-layout{
+            display: flex;
+            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+            border-radius: 5px;
+            flex-direction: column;
+            width: 300px;
+            margin-top: 40px;
+            background: white;
+        }
+        .container-masonry{
+            display: flex;
+            flex-wrap: wrap;
+            align-content: flex-start;
+            align-items: flex-start;
+        }
+        .container-flex{
+            display: flex;
+            flex-wrap: wrap;
+            align-content: space-around;
+            align-items: flex-start;            
+        }
+        .col {
+            flex: 1;
+        }
+        h2{
+            margin-left: 20px;
+        }
+        hr {
+	        margin: 0;
+	        padding: 0;
+	        height: 6px;
+	        border: none;
+	        border-top: 2px solid rgb(202, 202, 202);
+        }
+        .footer{
+            display: flex;
+            justify-content: flex-end;
+            flex-direction:column;
+            height: 60%;
+        }
+    </style>
+</head>
+<body>
+    <h2>Layout Masonry</h2>
+    <div class="container-masonry">
+        <div class="col">
+        <div class="card-layout"><img src = "Cards/Image1.jpg"> 
+            <p>Card Title</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima consequuntur possimus quo enim eveniet, deserunt ducimus doloremque laudantium iure, ut inventore eaque fugit ex porro totam perspiciatis molestiae corporis. Odio!</p>
+            <hr><p>More interesting things about the thing</p>
+        </div>
+        <div class="card-layout"><img src = "Cards/Image2.jpg"> 
+            <p>Card Title</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima consequuntur possimus quo enim eveniet, deserunt ducimus doloremque laudantium iure, ut inventore eaque fugit ex porro totam perspiciatis molestiae corporis. Odio!</p>
+            <hr><p>More interesting things about the thing</p>
+        </div>
+        <div class="card-layout"><img src = "Cards/Image3.jpg"> 
+            <p>Card Title</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima consequuntur possimus quo enim eveniet, deserunt ducimus doloremque laudantium iure, ut inventore eaque fugit ex porro totam perspiciatis molestiae corporis. Odio!</p>
+            <hr><p>More interesting things about the thing</p>
+        </div>
+        </div>
+        <div class="col">
+        <div class="card-layout"><img src = "Cards/Image4.jpg"> 
+            <p>Card Title</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima consequuntur possimus quo enim eveniet, deserunt ducimus doloremque laudantium iure, ut inventore eaque fugit ex porro totam perspiciatis molestiae corporis. Odio!</p>
+            <hr><p>More interesting things about the thing</p>
+        </div>
+        <div class="card-layout"><img src = "Cards/Image1.jpg"> 
+            <p>Card Title</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima consequuntur possimus quo enim eveniet, deserunt ducimus doloremque laudantium iure, ut inventore eaque fugit ex porro totam perspiciatis molestiae corporis. Odio!</p>
+            <hr><p>More interesting things about the thing</p>
+        </div>
+        <div class="card-layout"><img src = "Cards/Image2.jpg"> 
+            <p>Card Title</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima consequuntur possimus quo enim eveniet, deserunt ducimus doloremque laudantium iure, ut inventore eaque fugit ex porro totam perspiciatis molestiae corporis. Odio!</p>
+            <hr><p>More interesting things about the thing</p>
+        </div>
+        </div>
+        <div class="col">
+        <div class="card-layout"><img src = "Cards/Image3.jpg"> 
+            <p>Card Title</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima consequuntur possimus quo enim eveniet, deserunt ducimus doloremque laudantium iure, ut inventore eaque fugit ex porro totam perspiciatis molestiae corporis. Odio!</p>
+            <hr><p>More interesting things about the thing</p>
+        </div>
+        <div class="card-layout"><img src = "Cards/Image4.jpg"> 
+            <p>Card Title</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima consequuntur possimus quo enim eveniet, deserunt ducimus doloremque laudantium iure, ut inventore eaque fugit ex porro totam perspiciatis molestiae corporis. Odio!</p>
+            <hr><p>More interesting things about the thing</p>
+        </div>
+        </div>
+    </div>
+
+    <h2>Layout Flex</h2>
+    <div class="container-flex">
+        <div class="col">
+        <div class="card-layout" style="height: 600px"><img src = "Cards/Image1.jpg"> 
+            <p>Card Title</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima consequuntur possimus quo enim eveniet, deserunt ducimus doloremque laudantium iure, ut inventore eaque fugit ex porro totam perspiciatis molestiae corporis. Odio!</p>
+            <div class="footer"><hr><p>More interesting things about the thing</p></div>
+        </div>
+        <div class="card-layout" style="height: 600px"><img src = "Cards/Image4.jpg"> 
+            <p>Card Title</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima consequuntur possimus quo enim eveniet, deserunt ducimus doloremque laudantium iure, ut inventore eaque fugit ex porro totam perspiciatis molestiae corporis. Odio!</p>
+            <div class="footer"><hr><p>More interesting things about the thing</p></div>
+        </div>
+        <div class="card-layout" style="height: 600px"><img src = "Cards/Image3.jpg"> 
+            <p>Card Title</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima consequuntur possimus quo enim eveniet, deserunt ducimus doloremque laudantium iure, ut inventore eaque fugit ex porro totam perspiciatis molestiae corporis. Odio!</p>
+            <div class="footer"><hr><p>More interesting things about the thing</p></div>
+        </div>
+        </div>
+        <div class="col">
+        <div class="card-layout" style="height: 600px"><img src = "Cards/Image2.jpg"> 
+            <p>Card Title</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima consequuntur possimus quo enim eveniet, deserunt ducimus doloremque laudantium iure, ut inventore eaque fugit ex porro totam perspiciatis molestiae corporis. Odio!</p>
+            <div class="footer"><hr><p>More interesting things about the thing</p></div>
+        </div>
+        <div class="card-layout" style="height: 600px"><img src = "Cards/Image1.jpg"> 
+            <p>Card Title</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima consequuntur possimus quo enim eveniet, deserunt ducimus doloremque laudantium iure, ut inventore eaque fugit ex porro totam perspiciatis molestiae corporis. Odio!</p>
+            <div class="footer"><hr><p>More interesting things about the thing</p></div>
+        </div>
+        <div class="card-layout" style="height: 600px"><img src = "Cards/Image4.jpg"> 
+            <p>Card Title</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima consequuntur possimus quo enim eveniet, deserunt ducimus doloremque laudantium iure, ut inventore eaque fugit ex porro totam perspiciatis molestiae corporis. Odio!</p>
+            <div class="footer"><hr><p>More interesting things about the thing</p></div>
+        </div>
+        </div>
+        <div class="col">
+            <div class="card-layout" style="height: 600px"><img src = "Cards/Image3.jpg"> 
+                <p>Card Title</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima consequuntur possimus quo enim eveniet, deserunt ducimus doloremque laudantium iure, ut inventore eaque fugit ex porro totam perspiciatis molestiae corporis. Odio!</p>
+                <div class="footer"><hr><p>More interesting things about the thing</p></div>
+            </div>
+            <div class="card-layout" style="height: 600px"><img src = "Cards/Image2.jpg"> 
+                <p>Card Title</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima consequuntur possimus quo enim eveniet, deserunt ducimus doloremque laudantium iure, ut inventore eaque fugit ex porro totam perspiciatis molestiae corporis. Odio!</p>
+                <div class="footer"><hr><p>More interesting things about the thing</p></div>
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>

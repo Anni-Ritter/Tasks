@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Adaptive Cards</title>
+    <style>
+        body{
+            background: rgb(238, 238, 238);
+        }
+        .container{
+            background: rgb(255, 255, 255);
+            width: 400px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+            margin: 30px auto;
+            border-radius: 5px;
+            height: 450px;
+        }
+        .block_button{
+            background: rgb(0, 153, 0);
+            color: white;
+            border-radius: 5px;
+            height: 35px;
+            margin: 15px 20px;
+            float: right;
+        }
+        img{
+            max-width: 100%;
+            border-radius: 5px 5px 0 0;
+        }
+        .container h2{
+            font: 1em Georgia, serif;
+            line-height: 1.2;
+            margin: 20px 30px 15px 30px;
+        }
+        .container p{
+            font-family: Helvetica, sans-serif;
+            margin: 20px 30px 15px 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div>
+            <img src="photo.jpg">
+            <h2><b>Card Title</b></h2>
+            <p>Short description of what this is all about - crafted to make people interested</p>
+        </div>
+        <div><button class="block_button" name="button"><b>See more</b></button></div>
+    </div>
+</body>
+</html>

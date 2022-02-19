@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Введение Media Queries</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+
+        .login{
+            border: 1px solid black;
+            width: 150px;
+            height: 30px;
+            position: relative;
+            padding-left: 10px;
+            padding-top: 10px;
+            top: 20px;
+            background: rgb(243, 243, 243);
+            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+        }
+        
+        .container input{
+            width: 250px; 
+            height: 25px;
+            border-radius: 5px;
+            text-indent: 30px;
+        }
+        form {
+            padding: 0;
+            margin: 40px auto;
+        }
+        @media only screen  and (min-width: 1224px){
+            label {
+                display: inline-block;
+                margin-left: 20px;
+                width: 60px;
+            }
+            .block_button{
+                display: block;
+                width: 15%;
+                background: black;
+                color: white;
+                margin-top: 20px;
+                margin-left: 20px;
+                border-radius: 5px;
+                height: 35px;
+                cursor: pointer;
+            }  
+            .container{
+                border: 1px solid black;
+                width: 400px;
+                height: 220px;  
+                background: rgb(243, 243, 243);
+                box-shadow: 0 0 10px rgba(0,0,0,0.5);
+            }
+        }
+        @media only screen and (max-width: 1024px) {
+            label {
+                display: block;
+                margin-left: 20px;
+                width: 60px;
+            }
+            .block_button{
+                display: block;
+                width: 25%;
+                background: black;
+                color: white;
+                margin-top: 10px;
+                margin-left: 20px;
+                border-radius: 5px;
+                height: 35px;
+            }
+            .container{
+                border: 1px solid black;
+                width: 300px;
+                height: 220px;  
+                background: rgb(243, 243, 243);
+                box-shadow: 0 0 10px rgba(0,0,0,0.5);
+            }
+        }
+        .icon {
+            padding: 10px;
+            color: rgb(0, 0, 0);
+            min-width: 50px;
+        }
+        i.fa {
+            width: 26px;
+            height: 26px;
+            line-height: 26px;
+            text-align: center;
+            margin-right: -53px;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="login"><b>Login</b></div>
+        <div class="container">
+            <form action="" method="post">
+                <label for="username"><b>Username</b></label><i class="fa fa-user icon"></i><input type="text" name="username" required ><span></span><br>
+                <label for="pass"><b>Password</b></label><span><i class="fa fa-key icon"></i><input type="password" name="pass" required ><span></span>  
+            <button class="block_button" type="submit" name="button_submit"><b>Login</b></button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

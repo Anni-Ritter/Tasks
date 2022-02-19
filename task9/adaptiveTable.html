@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Adaptive Table</title>
+    <style>
+        body{
+            background: rgb(238, 238, 238);
+        }
+        @media screen and (min-width: 600px) { 
+            table { 
+            width: 70%;
+            border: 1px;
+            border-collapse: collapse;
+            }
+            td, th{
+                padding: 5px;
+                border: 1px solid rgb(151, 151, 151);
+                text-align: left;
+            }
+            tr:nth-child(2n) {
+                background: rgb(255, 255, 255);
+            }
+            thead{
+                background: rgb(0, 0, 0);
+                color: rgb(255, 255, 255);
+            }
+            .table-phone{
+                visibility: hidden;
+            }
+        }
+        @media screen and (max-width: 600px) { 
+            tr { 
+                display: block; 
+                float: left; 
+            }
+            th, td { 
+                display: block;
+                text-align: left;
+            }
+            .table-visibli{
+                visibility: collapse;
+            }
+            table {
+                border-collapse: collapse;       
+                border: 1px solid rgb(190, 190, 190);
+            }
+            td:not(:last-child), th:not(:last-child){
+                border-bottom: 1px solid rgb(190, 190, 190);
+            }
+            th:nth-child(n+4){
+                background: rgb(255, 255, 255);
+            }
+            td:nth-child(n+4){
+                background: rgb(255, 255, 255);
+            }
+        }
+        
+    </style>
+</head>
+<body>
+   <table class="table-visibli">
+    <thead>
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Job Title</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>James</td>
+            <td>Matman</td>
+            <td>Chief Sandwich Eater</td>
+        </tr>
+        <tr>
+            <td>Jon</td>
+            <td>Doe</td>
+            <td>Chief Sandwich Eater</td>
+        </tr>
+    </tbody>
+   </table>
+
+   <table class="table-phone">
+    <tbody>
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Job Title</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Job Title</th>
+        </tr>
+         <tr>
+            <td>James</td>
+            <td>Matman</td>
+            <td>Chief Sandwich Eater</td>
+            <td>Jon</td>
+            <td>Doe</td>
+            <td>Chief Sandwich Eater</td>
+         </tr>
+     </tbody>
+</table>
+</body>
+</html>
